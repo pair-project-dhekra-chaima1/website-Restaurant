@@ -16,14 +16,12 @@
   
   /* Container */
   .container {
-    width: 100%;
+    width: 85%;
     font-family: "freight-big-pro";
     margin: 0 auto;
     padding: 0 15px;
     background: url(/img/food.jpg);
     background-size: cover;
-    
-    
   }
   
   /* Header styles */
@@ -264,3 +262,6 @@
     
 
   } */
+   .col-2{
+    
+   }
