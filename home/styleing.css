@@ -20,10 +20,10 @@
     font-family: "freight-big-pro";
     margin: 0 auto;
     padding: 0 15px;
-    background: url(/img/food.jpg);
+   
     background-size: cover;
   }
-  
+ 
   /* Header styles */
   .header {
    box-shadow: 1px 5px 5px grey;
@@ -42,41 +42,55 @@
   }
   
   .navigation {
-    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 50vh; 
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    font-weight: lighter;
+    transition: color 1.3s ease;
+    
   }
   
   .navigation ul {
+    padding: 0;
+    margin: 0;
     list-style-type: none;
+
   }
   
-  .navigation ul li {
-    display: inline-block;
-    margin-right: 20px;
+  .navigation li {
+    margin-bottom: 20px;
+    margin-right:250px
   }
   
-  .navigation ul li a {
+  .navigation a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    
   }
   
-  .navigation ul li a:hover {
-    color: #dfd093bb;
+  .navigation a:hover {
+    color: #ddd;
   }
+
+
   
   /* Hero section styles */
   .hero {
-    background: url(/img/menu-bg.jpg);
+    background: url(/img/food.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 0ch;
     text-align: center;
     padding: 100px 0;
     font-kerning: none;
-    color: #fff;
-    /* background-color:rgb(243, 221, 193); */
   }
   
   .hero h1 {
@@ -91,26 +105,25 @@
   writing-mode: horizontal-tb;
   font-weight: normal;
   padding-top: 0%;
-  /* font-weight: lighter; */
+  font-weight: lighter;
  
   }
   
   .hero p {
-    
+    word-spacing: 4px;
     font-size : 1.5rem;
     margin-bottom: 30px;
-   /* margin-left: auto;*/
-   text-align: left;
-   font-size: 90;
-   font-weight: bolder;
-   
-
+    margin-left: auto;
+    text-align: left;
+    font-weight: bolder;
+    
+  
   }
   
   .hero .btn {
     display: inline-block;
-    
-    color:black;
+    background-color: #0d6699;
+    color: #333;
     text-decoration: none;
     padding: 15px 30px;
     border-radius: 5px;
@@ -118,7 +131,7 @@
   }
   
   .hero .btn:hover {
-    background-color: #676666;
+    background-color: #e0b800;
   }
   
   /* Menu section styles */
@@ -129,9 +142,10 @@
   }
   
   .menu h2 {
-    font-size: 2.5rem;
+    font-size: 50px;
     margin-bottom: 30px;
     color: #f7f7f7;
+    
 
     
   }
@@ -205,32 +219,38 @@
     color: #fff;
     text-align: center;
     padding: 30px 0;
-    background-color: #fff;
   }
   .sidenav {
     height: 100%;
-    width: 100px;;
+    width: 0px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background:url(/img/menu-bg.jpg);
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 1.5s;
     padding-top: 150px;
+    transform: scale(1);
+    opacity: 1;
+    
   }
   
   .sidenav a {
-    padding: 8px 8px 8px 32px;
+    
+    padding: 8px 80px 8px 320px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
     transition: 0.3s;
+    
   }
   
   .sidenav a:hover {
     color: #f1f1f1;
+    
+    
   }
   
   .sidenav .closebtn {
@@ -239,32 +259,38 @@
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+    cursor: pointer;;
   }
   
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+  
   .col-1 {
     display: flex;
     justify-content: space-between;
-    text-align:left;
-    font-style: normal;
-    font-weight: normal;
-    font-weight:lighter;
-    font-size: 15px;
+    
+    font-size: 10px;
     color: #f1f1f1;
     font-family: Arial, Helvetica, sans-serif;
+    white-space: normal;
   }
   #row-countent{
     padding-top: 15px;
     padding-bottom: 15px;
+    white-space: normal;
   }
-  /* .col-1{
-    padding:
-    
-
-  } */
-   .col-2{
-    color: white;
-   }
+  .m-logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%; 
+  }
+  
+.col-2{
+  display: flex;
+  padding-top: 15px;
+    padding-bottom: 15px;
+    white-space: normal;
+    justify-content: space-between;
+    color: #f1f1f1;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
