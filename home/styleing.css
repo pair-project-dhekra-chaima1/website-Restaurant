@@ -63,7 +63,7 @@
   }
   
   .navigation ul li a:hover {
-    color: #ffcc00;
+    color: #dfd093bb;
   }
   
   /* Hero section styles */
@@ -75,6 +75,8 @@
     text-align: center;
     padding: 100px 0;
     font-kerning: none;
+    color: #fff;
+    /* background-color:rgb(243, 221, 193); */
   }
   
   .hero h1 {
@@ -89,7 +91,7 @@
   writing-mode: horizontal-tb;
   font-weight: normal;
   padding-top: 0%;
-  font-weight: lighter;
+  /* font-weight: lighter; */
  
   }
   
@@ -107,8 +109,8 @@
   
   .hero .btn {
     display: inline-block;
-    background-color: #ffcc00;
-    color: #333;
+    
+    color:black;
     text-decoration: none;
     padding: 15px 30px;
     border-radius: 5px;
@@ -116,7 +118,7 @@
   }
   
   .hero .btn:hover {
-    background-color: #e0b800;
+    background-color: #676666;
   }
   
   /* Menu section styles */
@@ -203,6 +205,7 @@
     color: #fff;
     text-align: center;
     padding: 30px 0;
+    background-color: #fff;
   }
   .sidenav {
     height: 100%;
@@ -263,5 +266,5 @@
 
   } */
    .col-2{
-    
+    color: white;
    }

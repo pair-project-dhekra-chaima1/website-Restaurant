@@ -58,3 +58,19 @@ body{
      align-items: center;
     flex-wrap: wrap;
 }
+.hero .btn {
+    display: inline-block;
+    
+    color:rgba(246, 215, 176, 0.91);
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero .btn:hover {
+    background-color: #818181;
+  }
+  .card:hover,.card:active{
+    font-size: 500%;
+  }
