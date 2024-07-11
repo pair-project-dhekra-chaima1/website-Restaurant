@@ -26,19 +26,19 @@ body{
 .contact{
     font-weight: 700;
     font-family: mr-eaves-modern;
-    overflow: hidden;
-    border-radius: 4px;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
+    overflow: hidden; 
+     border-radius: 4px;  
+    transform: translateZ(0); 
+     -webkit-transform: translateZ(0);
     background: #e7e5e58b;
-    border-radius: 2px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .1);
+    border-radius: 2px; 
+     box-shadow: 0 0 2px 0 rgba(0, 0, 0, .2);
     margin:auto;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     transition: all .2s ease-in-out;
     display: block;
     unicode-bidi: isolate;
-    width: 500px;
+    width: 600px; 
     
 }
 #quation{
@@ -51,3 +51,49 @@ body{
 .option{
    margin-left: 10%;
 }
+h4{
+    margin-bottom: 0;
+    color: #fff;
+    font-family: "freight-big-pro";
+    font-weight: 400;
+    font-size: 2rem;
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+h2:hover,h2:focus {
+    text-decoration: none;
+    text-decoration: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    color:  #fff;
+
+}
+.hero .btn {
+    display: inline-block;
+    
+    color:rgba(246, 215, 176, 0.91);
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .hero .btn:hover {
+    background-color: #818181;
+  }
+  .card:hover,.card:active{
+    font-size: 500%;
+  }
