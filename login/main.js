@@ -5,9 +5,9 @@ document.getElementById('signin-form').addEventListener('submit', function(event
     alert('Sign in succeeded!');
 });
 document.querySelector('.social-button.facebook').addEventListener('click', function() {
-    window.location.href = 'https://www.facebook.com';
+    window.location.href = 'https://www.facebook.com/AdachiRestaurant/';
 });
 
 document.querySelector('.social-button.instagram').addEventListener('click', function() {
-    window.location.href = 'https://www.instagram.com/traveltodo/';
+    window.location.href = 'https://www.instagram.com/adachirestaurant/';
 });
