@@ -34,8 +34,8 @@ function closeNav() {
 
 // index.js
 
-let slideIndex = 1;
-
+var slideIndex = 1;
+showSlides(slideIndex);
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
@@ -45,9 +45,9 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("image-item");
-  let dots = document.getElementsByClassName("dot");
+  var i;
+  var slides = document.getElementsByClassName("image-item");
+  var dots = document.getElementsByClassName("dot");
 
   if (n > slides.length) { slideIndex = 1 }
   if (n < 1) { slideIndex = slides.length }
