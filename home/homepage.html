@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adachi Restaurant</title>
+  <link rel="icon" type="image/icon" href="/img/logo.jpg">
   <link rel="stylesheet" href="./styleing.css">
   <script src="index.js"></script>
   
@@ -30,7 +31,8 @@
           <li><a href="./homepage.html">Home</a></li>
           <li><a href="../menu/index.html">Menu</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="http://127.0.0.1:5501/contact/">Contact Us</a></li>
+          <li><a href="http://127.0.0.1:5502/contact/index.html">Contact Us</a></li>
+          <li><a href="http://127.0.0.1:5502/login/index.html">Sign in</a></li>
         </ul>
       </nav>
     </div>
@@ -42,6 +44,7 @@
   <section class="hero">
     <div class="container">
         <p>FRESH INGREDIENTS SOURCED GLOBALLY</p>
+        
       <h1>Japanese Inspired Cuisine</h1>
       
       <a href="http://127.0.0.1:5501/menu/index.html" class="btn">View Menu</a>
@@ -49,7 +52,7 @@
   </section>
 
   <!-- Menu section -->
-  <section id="menu" class="menu">
+  <section class="menu">
     <div class="container">
       <h2>Our Mission</h2>
       <div id="row-content">
@@ -74,7 +77,7 @@
             </p>
             <p>
                 Join us for dinner, cocktails, a private party, or any special occasion. Adachi promises world-class hospitality,
-                making your visit special and memorable. Discover why Adachi is the perfect destination for Japanese-inspired cuisine in Birmingham, Michigan.
+                making your visit special and memorable. Discover why Adachi is the perfect destination for Japanese-inspired cuisine in tunisia.
             </p>
         </div>
       </div>
@@ -82,10 +85,10 @@
         <div class="menu-item">
           <img src="https://adachirestaurant.com/wp-content/uploads/2020/11/adachi-birmingham.jpg" alt="Sushi">
           <h3>Adachi</h3>
-          <p>An unpretentious 12-seat counter restaurant where only the best raw produce is selected, this is one of the best places for sushi in Taipei.</p>
+          <p>An unpretentious 12-seat counter restaurant where only the best raw produce is selected, this is one of the best places for sushi .</p>
         </div>
         <div class="menu-item">
-          <img src="https://orpetron.com/wp-content/uploads/2021/03/Adachi-Restaurant-2608f92c1cc448b815ce590862861a72.jpg" alt="Sashimi">
+          <img src="/img/sushi2.jpg" alt="Sashimi">
           <h3>Adachi</h3>
           <p>As with many Japanese restaurants, reservations are difficult to come by and are often by introduction only.</p>
         </div>
@@ -95,13 +98,28 @@
   </section>
 
   <!-- About section -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>We are committed to providing an authentic Japanese dining experience with our traditional and innovative dishes.</p>
-      <p>Located in the heart of the city, Adachi Restaurant has been serving customers for over a decade.</p>
+<section class="about">
+  <div class="slide-section">
+    <div class="slider">
+      <div class="image-item">
+        <img src="/img/s1.jpg" style="width:100%" alt="img-1">
+      </div>
+      <div class="image-item">
+        <img src="/img/2.jpg" style="width:100%" alt="img-2">
+      </div>
+      <div class="image-item">
+        <img src="/img/sushi.webp" style="width:100%" alt="img-3">
+      </div>
     </div>
-  </section>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+</section>
 
   <!-- Contact section -->
   <section id="contact" class="contact">
