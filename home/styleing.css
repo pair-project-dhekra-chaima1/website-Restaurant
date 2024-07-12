@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
    
     
   }
@@ -62,17 +62,19 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
-
+   
   }
   
   .navigation li {
     margin-bottom: 20px;
-    margin-right:250px
+    margin-right:250px;
+    
   }
   
   .navigation a {
     color: #fff;
-    text-decoration: none;
+    /*text-decoration: none;*/
+    font-family: "freight-big-pro", serif;
     
   }
   
@@ -94,11 +96,11 @@
   }
   
   .hero h1 {
-    -webkit-font-smoothing: antialiased;
-    font-size: 100px;
-    margin-bottom:100px;
-    text-align: left;
-    font-optical-sizing: none;
+  -webkit-font-smoothing: antialiased;
+  font-size: 100px;
+  margin-bottom:100px;
+  text-align: left;
+  font-optical-sizing: none;
   font-family: "Libre Baskerville", serif;
   font-style: normal;
   padding-inline-end: 2em;
@@ -106,7 +108,8 @@
   font-weight: normal;
   padding-top: 0%;
   font-weight: lighter;
- 
+  color: antiquewhite;
+
   }
   
   .hero p {
@@ -116,14 +119,15 @@
     margin-left: auto;
     text-align: left;
     font-weight: bolder;
+    color: antiquewhite;
     
   
   }
   
   .hero .btn {
     display: inline-block;
-    background-color: #0d6699;
-    color: #333;
+    background-color: transparent;
+    color: antiquewhite;
     text-decoration: none;
     padding: 15px 30px;
     border-radius: 5px;
@@ -131,8 +135,9 @@
   }
   
   .hero .btn:hover {
-    background-color: #e0b800;
+    background-color: rgba(2, 43, 43, 0.2);
   }
+  
   
   /* Menu section styles */
   .menu {
@@ -154,14 +159,16 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
+
   }
   
   .menu-item {
     text-align: left;
-    background-color: #fff;
+    background: url();
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
   }
   
   .menu-item img {
@@ -171,35 +178,104 @@
   
   .menu-item h3 {
     margin-top: 20px;
-    font-size: 2rem;
+    
+    font-size: 1.2rem;
+    line-height: 1,333;
+    color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
   }
+  
   
   .menu-item p {
     font-size: 1.2rem;
-    line-height: 1.6;
+    line-height: 1,333;
+    color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   /* About section styles */
-  .about {
-    padding: 100px 0;
-    text-align: center;
+.image-item {display: none}
+  img {
+    vertical-align: middle;
+  }
+      
+      /* Slideshow container */
+      .slide-section {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        flex-direction: column;
+        box-shadow: 1px -4px 45px 11px rgba(20,1,1,0.75);
+        -webkit-box-shadow: 1px -4px 45px 11px rgba(20,1,1,0.75);
+        -moz-box-shadow: 1px -4px 45px 11px rgba(20,1,1,0.75);;
+        
+      }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
   }
   
-  .about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
   }
   
-  .about p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
   }
   
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
   /* Contact section styles */
   .contact {
     padding: 100px 0;
     text-align: center;
+    background: url(/img/sushi2.jpg);
+    color: antiquewhite;
+
   }
   
   .contact h2 {
@@ -233,11 +309,11 @@
     padding-top: 150px;
     transform: scale(1);
     opacity: 1;
-    
+    font-family: "freight-big-pro", serif;
   }
   
   .sidenav a {
-    
+    font-family: "freight-big-pro", serif;
     padding: 8px 80px 8px 320px;
     text-decoration: none;
     font-size: 25px;
@@ -267,7 +343,7 @@
     display: flex;
     justify-content: space-between;
     
-    font-size: 10px;
+    font-size: 15px;
     color: #f1f1f1;
     font-family: Arial, Helvetica, sans-serif;
     white-space: normal;
@@ -291,6 +367,6 @@
     white-space: normal;
     justify-content: space-between;
     color: #f1f1f1;
-    font-size: 10px;
+    font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
